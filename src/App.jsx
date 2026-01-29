@@ -28,6 +28,21 @@ function App() {
           <div className="menu-card">🥤 Fresh Juices</div>
         </div>
       </section>
+      {/* LOCATION SECTION */}
+
+{/* LOCATION LINK SECTION */}
+<section className="location-link">
+  <h2>Location</h2>
+
+  <a
+    href="https://maps.app.goo.gl/VA8xUPAbpCHy8gKk8"
+    target="_blank"
+    rel="noreferrer"
+    className="map-link"
+  >
+    📍 View Anubhav Cafe on Google Maps
+  </a>
+</section>
 
       {/* FOOTER */}
       <footer className="footer">

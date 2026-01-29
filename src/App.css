@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI", "Inter", sans-serif;
   background: #faf7f2;
   color: #333;
 }
+
 
 .app {
   width: 100%;
@@ -19,8 +20,12 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
+
 
 .hero p {
   font-size: 1.3rem;
@@ -111,4 +116,61 @@ body {
   .hero h1 {
     font-size: 2.5rem;
   }
+  /* LOCATION SECTION */
+.location {
+  padding: 70px 40px;
+  background: #faf7f2;
+  text-align: center;
+}
+
+.location h2 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #5a3e2b;
+  font-family: "Playfair Display", serif;
+}
+
+.map-container {
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.address {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+/* LOCATION LINK SECTION */
+.location-link {
+  padding: 60px 20px;
+  text-align: center;
+  background: #faf7f2;
+}
+
+.location-link h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #5a3e2b;
+  font-family: "Playfair Display", serif;
+}
+
+.map-link {
+  display: inline-block;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  background: white;
+  color: #333;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.map-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
 }
