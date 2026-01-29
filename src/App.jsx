@@ -1,70 +1,43 @@
-export default function App() {
+import "./App.css";
+
+function App() {
   return (
-    <div>
+    <div className="app">
+      {/* HERO SECTION */}
       <header className="hero">
-        <h1>Anubhav Cafe</h1>
-        <p>Delicious food, made fresh every day</p>
-        <a
-          href="https://wa.me/919749861665"
-          target="_blank"
-          className="btn"
-        >
-          Order on WhatsApp
-        </a>
+        <h1>Anubhav Cafe ☕</h1>
+        <p>Fresh • Tasty • Made with Love</p>
+        <span className="timing">🕙 10 AM – 5 PM</span>
       </header>
 
-      <section className="section">
-        <h2>About Us</h2>
-        <p>
-          Anubhav Cafe serves fresh and tasty food in a warm, friendly
-          atmosphere. Perfect for quick bites and relaxing meals.
-        </p>
-      </section>
-
-      <section className="section menu">
+      {/* MENU SECTION */}
+      <section className="menu">
         <h2>Our Menu</h2>
+
         <div className="menu-grid">
-          {[
-            "Chicken Fried Rice",
-            "Chicken Momo",
-            "Chicken Noodles",
-            "Juices",
-          ].map((item) => (
-            <div className="menu-card" key={item}>
-              <div className="image-placeholder">Image</div>
-              <h3>{item}</h3>
-            </div>
-          ))}
+          <div className="menu-card">🍗 Chicken Fried Rice</div>
+          <div className="menu-card">🥟 Chicken Momo</div>
+          <div className="menu-card">🍜 Chicken Noodles</div>
+          <div className="menu-card">🥤 Fresh Juices</div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Timings</h2>
-        <p><strong>10:00 AM – 5:00 PM</strong></p>
-      </section>
+      {/* FOOTER */}
+      <footer className="footer">
+        <p>📍 Anubhav Cafe • Open Daily • Visit Us Today</p>
+      </footer>
 
-      <section className="section">
-        <h2>Location</h2>
-        <iframe
-          src="https://www.google.com/maps?q=https://maps.app.goo.gl/VA8xUPAbpCHy8gKk8&output=embed"
-          width="100%"
-          height="300"
-          loading="lazy"
-          title="Cafe Location"
-        ></iframe>
-      </section>
-
+      {/* WHATSAPP BUTTON */}
       <a
         href="https://wa.me/919749861665"
+        className="whatsapp-float"
         target="_blank"
-        className="whatsapp"
+        rel="noreferrer"
       >
-        WhatsApp
+        💬
       </a>
-
-      <footer className="footer">
-        <p>© 2026 Anubhav Cafe</p>
-      </footer>
     </div>
   );
 }
+
+export default App;
